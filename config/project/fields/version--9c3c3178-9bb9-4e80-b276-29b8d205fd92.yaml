@@ -1,0 +1,19 @@
+columnSuffix: lzvtecex
+contentColumnType: text
+fieldGroup: 563a8c69-ff4a-42c2-86e6-6ac008d66ec7 # Weakauras
+handle: version
+instructions: null
+name: Version
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

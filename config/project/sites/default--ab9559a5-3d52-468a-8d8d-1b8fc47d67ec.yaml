@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: Wago
+primary: true
+siteGroup: ba41a1d0-a939-42fc-8605-1003c24c3155 # Wago
+sortOrder: 1

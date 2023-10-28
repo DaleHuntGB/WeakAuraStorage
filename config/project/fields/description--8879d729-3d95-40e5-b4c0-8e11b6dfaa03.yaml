@@ -1,0 +1,23 @@
+columnSuffix: fnxvydfl
+contentColumnType: text
+fieldGroup: 563a8c69-ff4a-42c2-86e6-6ac008d66ec7 # Weakauras
+handle: description
+instructions: null
+name: Description
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: 12d81eb2-5390-437b-b5d0-80de134f59c2 # Simple
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

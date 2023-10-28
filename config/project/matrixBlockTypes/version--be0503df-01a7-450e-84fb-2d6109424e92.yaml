@@ -1,0 +1,94 @@
+field: eb3b433b-0380-48e1-8e06-9608aa3d306c # Code
+fieldLayouts:
+  7c89b37a-13d9-49ea-ae8c-8f850c30299c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87021839-c617-4433-8339-4daa950ddab1 # Version
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c78443b-78cb-426e-8fb3-36c988187718
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 18901957-b372-462b-be45-eb44e30fc386 # Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 074705c4-37ee-4774-9692-b2d480fc2328
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c5b84584-f697-46d1-9c35-3a041c409f65
+        userCondition: null
+fields:
+  18901957-b372-462b-be45-eb44e30fc386: # Code
+    columnSuffix: abyygfef
+    contentColumnType: mediumtext
+    fieldGroup: null
+    handle: code
+    instructions: null
+    name: Code
+    searchable: false
+    settings:
+      availableLanguages:
+        - css
+        - graphql
+        - html
+        - javascript
+        - json
+        - markdown
+        - mysql
+        - php
+        - shell
+        - twig
+        - typescript
+        - yaml
+      codeFolding: false
+      columnType: mediumtext
+      defaultValue: ''
+      fontSize: 14
+      language: html
+      lineNumbers: false
+      monacoEditorOptions: ''
+      placeholder: ''
+      showLanguageDropdown: true
+      singleLineEditor: true
+      theme: vs
+    translationKeyFormat: null
+    translationMethod: none
+    type: nystudio107\codefield\fields\Code
+  87021839-c617-4433-8339-4daa950ddab1: # Version
+    columnSuffix: frmalijl
+    contentColumnType: text
+    fieldGroup: null
+    handle: version
+    instructions: null
+    name: Version
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: version
+name: Version
+sortOrder: 1

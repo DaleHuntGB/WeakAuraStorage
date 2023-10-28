@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 563a8c69-ff4a-42c2-86e6-6ac008d66ec7 # Weakauras
+handle: code
+instructions: null
+name: Code
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_code}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

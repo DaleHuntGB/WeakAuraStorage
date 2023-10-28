@@ -1,0 +1,124 @@
+fieldLayouts:
+  0a7dc600-8f3a-4321-9652-dbf2e6e00e23:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 056ef7a1-2a9a-4f5b-9815-62a599e343cd
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9c3c3178-9bb9-4e80-b276-29b8d205fd92 # Version
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c627e700-41c6-4cd8-9ac4-a8b5c30ccf1f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 87fe2549-eab9-4249-8136-ad0171daef0b # Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea49bba8-5fba-4dd2-a0b4-13d8703d7b36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 53ee3874-37bd-477e-b6d9-1720687bd3a2 # Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca1973bf-d953-4485-964a-6565e8e25b5f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8879d729-3d95-40e5-b4c0-8e11b6dfaa03 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cbeed60-646a-4c44-bf12-f01aa2f9da78
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7e09ebd-39b4-4449-9668-b6b1eab25455 # Plain text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d79876f-d492-4462-8a10-8f321b905814
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7958d1d0-62aa-4bb5-87d0-1f92d6916e6d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: eb3b433b-0380-48e1-8e06-9608aa3d306c # Code
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d89da7b1-d230-45c9-ad46-a1534598c2fd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Code
+        uid: f9472967-e1bc-4393-8366-d53220999916
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 7862d661-1b5f-49bd-a1dc-210e9c6c0717 # Weakauras
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

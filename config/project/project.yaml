@@ -1,0 +1,66 @@
+dateModified: 1698222814
+email:
+  fromEmail: mathias@syversen.io
+  fromName: Wago
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: images
+    settings:
+      path: '@webroot/assets/images'
+    type: craft\fs\Local
+    url: '@web/assets/images'
+  profilePictures:
+    hasUrls: true
+    name: 'Profile Pictures'
+    settings:
+      path: '@webroot/assets/profilepictures'
+    type: craft\fs\Local
+    url: '@web/assets/profilepictures'
+meta:
+  __names__:
+    9c3c3178-9bb9-4e80-b276-29b8d205fd92: Version # Version
+    12d81eb2-5390-437b-b5d0-80de134f59c2: Simple # Simple
+    53ee3874-37bd-477e-b6d9-1720687bd3a2: Category # Category
+    87fe2549-eab9-4249-8136-ad0171daef0b: Images # Images
+    90c8d534-47a7-4157-9f82-6439f121b023: Frontpage # Frontpage
+    97e77bd8-c19a-4f84-be2b-4d1bcee0b6e6: 'Profile Picture' # Profile Picture
+    99a050be-1f51-42b3-ad7d-62c77a5dac7f: Default # Default
+    452d6fa6-7d32-4953-a316-1e81e650b289: WeakAura # WeakAura
+    563a8c69-ff4a-42c2-86e6-6ac008d66ec7: Weakauras # Weakauras
+    591fe6ec-2b74-4df4-97cb-5f2f2cdfd3c8: Images # Images
+    7862d661-1b5f-49bd-a1dc-210e9c6c0717: Weakauras # Weakauras
+    8879d729-3d95-40e5-b4c0-8e11b6dfaa03: Description # Description
+    6829546d-f314-4436-8386-1ded701f4f78: Common # Common
+    18901957-b372-462b-be45-eb44e30fc386: Code # Code
+    87021839-c617-4433-8339-4daa950ddab1: Version # Version
+    ab9559a5-3d52-468a-8d8d-1b8fc47d67ec: Wago # Wago
+    ba41a1d0-a939-42fc-8605-1003c24c3155: Wago # Wago
+    be0503df-01a7-450e-84fb-2d6109424e92: Version # Version
+    c949657b-0502-4133-8267-addc74137f57: Frontpage # Frontpage
+    d7e09ebd-39b4-4449-9668-b6b1eab25455: 'Plain text' # Plain text
+    d837e9a3-1439-4e7c-96f1-6a17cc25c35a: Categories # Categories
+    eb3b433b-0380-48e1-8e06-9608aa3d306c: Code # Code
+    eda5fb68-d8b4-4e76-af17-0a3aa60703df: 'Profile Pictures' # Profile Pictures
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  codefield:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Wago
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: eda5fb68-d8b4-4e76-af17-0a3aa60703df # Profile Pictures
+  requireEmailVerification: true

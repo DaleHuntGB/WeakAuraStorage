@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: weakauras
+name: Weakauras
+propagationMethod: all
+siteSettings:
+  ab9559a5-3d52-468a-8d8d-1b8fc47d67ec: # Wago
+    enabledByDefault: true
+    hasUrls: true
+    template: _sections/weakauras
+    uriFormat: 'weakauras/{slug}'
+type: channel

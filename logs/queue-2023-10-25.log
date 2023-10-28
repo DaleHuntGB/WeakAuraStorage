@@ -1,0 +1,128 @@
+2023-10-25 08:33:51 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=wago;port=3306 {"memory":758904} 
+2023-10-25 08:33:51 [queue.INFO] [yii\web\Session::open] Session started {"memory":954376} 
+2023-10-25 08:33:51 [queue.INFO] [nystudio107\codeeditor\CodeEditor::bootstrap] CodeEditor module bootstrapped {"memory":984912} 
+2023-10-25 08:33:51 [queue.INFO] [nystudio107\codefield\CodeField::init] Code Field plugin loaded {"memory":1086368} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [139] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Started {"memory":1344288} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [139] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Done (time: 0.017s) {"memory":1599240} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [140] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Started {"memory":1602720} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [140] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Done (time: 0.005s) {"memory":1665416} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [141] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Started {"memory":1668704} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [141] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Done (time: 0.000s) {"memory":1674936} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [142] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Started {"memory":1678416} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [142] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Done (time: 0.044s) {"memory":1902376} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [143] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Started {"memory":1906312} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [143] t9n:["app","Updating search indexes"] (attempt: 1, pid: 6026) - Done (time: 0.004s) {"memory":1944240} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [144] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Started {"memory":1947208} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [144] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Done (time: 0.000s) {"memory":1948784} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [145] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Started {"memory":1952264} 
+2023-10-25 08:33:51 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [145] t9n:["app","Generating image transform"] (attempt: 1, pid: 6026) - Done (time: 0.038s) {"memory":2010544} 
+2023-10-25 08:33:51 [queue.INFO] [application] Request context:
+$_GET = [
+    'p' => 'admin/actions/queue/run'
+    'v' => '1698222831170'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '4071c9bd13c7b0165b1d910c53acf690_username' => '6f73d33acaf3bab5cdb7fc0535c9ad719f1a51843999ffef26552ffde6e0d1eaa:2:{i:0;s:41:\"4071c9bd13c7b0165b1d910c53acf690_username\";i:1;s:5:\"admin\";}'
+    '__stripe_mid' => '0aa8d23d-443a-4b47-84ae-a22f545be397f6787f'
+    'CraftSessionId' => 'hqg2khfgfe6du75hmcsufulmon'
+    '4071c9bd13c7b0165b1d910c53acf690_identity' => '615bf9c68253f3230ff20387bf20ca4f109154d66a7aa1bf621801fbf965e75ea:2:{i:0;s:41:\"4071c9bd13c7b0165b1d910c53acf690_identity\";i:1;s:159:\"[1,\"[\\\"nQVulKmM2ZTmnOGZwIRW3UFO_FqIzp3f2LFRv2MJZ5fbpyeuTAp0XALXJLnhJrKyp0ekfFKRNpP7l0WPZOq52CX4dUGSzPP6x9FR\\\",null,\\\"6bf9f47fa7833780f7fb47814ffc5090\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+]
+
+$_SESSION = [
+    '33f4f3f54c4b656c28c80d6ce309535b__flash' => []
+    '33f4f3f54c4b656c28c80d6ce309535b__auth_access' => [
+        0 => 'previewDraft:1'
+        1 => 'previewElement:2'
+        2 => 'editStructure:1'
+        3 => 'previewDraft:2'
+        4 => 'previewDraft:3'
+        5 => 'previewDraft:4'
+        6 => 'previewDraft:5'
+        7 => 'previewDraft:6'
+        8 => 'previewDraft:7'
+        9 => 'previewDraft:8'
+        10 => 'previewDraft:9'
+        11 => 'previewDraft:10'
+        12 => 'saveAssets:591fe6ec-2b74-4df4-97cb-5f2f2cdfd3c8'
+        13 => 'previewDraft:11'
+        14 => 'previewElement:8'
+        15 => 'previewDraft:12'
+    ]
+    '4071c9bd13c7b0165b1d910c53acf690__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '4071c9bd13c7b0165b1d910c53acf690__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '4071c9bd13c7b0165b1d910c53acf690__expire' => 1698226431
+    '__duration' => 3600
+]
+
+$_SERVER = [
+    'SCRIPT_URL' => '/index.php'
+    'SCRIPT_URI' => 'https://wago.test/index.php'
+    'HTTPS' => 'on'
+    'SSL_TLS_SNI' => 'wago.test'
+    'HTTP_HOST' => 'wago.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"118\", \"Brave\";v=\"118\", \"Not=A?Brand\";v=\"99\"'
+    'HTTP_X_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_X_REGISTERED_ASSET_BUNDLES' => 'e38a2e07,22e517a2,aee7f8dc,e505ffd6,6b4d7555,e5e48399,bb2f10a0,815d39ea,fc0bc163,1ccab40d,1e21896b,54698ee0,b842675b,1c3c9add,4b1fd285,d8d08e47,8f00ce04,8768f48b,cf3018d6,11858fc6,8550f857,c7a8fe38'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36'
+    'HTTP_X_REGISTERED_JS_FILES' => ''
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"macOS\"'
+    'HTTP_SEC_GPC' => '1'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8'
+    'HTTP_ORIGIN' => 'https://wago.test'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'https://wago.test/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_COOKIE' => '4071c9bd13c7b0165b1d910c53acf690_username=6f73d33acaf3bab5cdb7fc0535c9ad719f1a51843999ffef26552ffde6e0d1eaa%3A2%3A%7Bi%3A0%3Bs%3A41%3A%224071c9bd13c7b0165b1d910c53acf690_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; __stripe_mid=0aa8d23d-443a-4b47-84ae-a22f545be397f6787f; CraftSessionId=hqg2khfgfe6du75hmcsufulmon; 4071c9bd13c7b0165b1d910c53acf690_identity=615bf9c68253f3230ff20387bf20ca4f109154d66a7aa1bf621801fbf965e75ea%3A2%3A%7Bi%3A0%3Bs%3A41%3A%224071c9bd13c7b0165b1d910c53acf690_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22nQVulKmM2ZTmnOGZwIRW3UFO_FqIzp3f2LFRv2MJZ5fbpyeuTAp0XALXJLnhJrKyp0ekfFKRNpP7l0WPZOq52CX4dUGSzPP6x9FR%5C%22%2Cnull%2C%5C%226bf9f47fa7833780f7fb47814ffc5090%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=e7e1a9fc52c1c62db7c3e7e4c282d97612440781ce82739f3e09654a26cfdb3aa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%221wgJv908YaNMGz2E9mx8wX6uC2xj4zSllDbHN-Ei%7C94b0e3167288728e5c9cc3249cfc3f0f93b789c98bff1c7812484673cb25b3e81wgJv908YaNMGz2E9mx8wX6uC2xj4zSllDbHN-Ei%7C1%22%3B%7D'
+    'PATH' => '/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.57 (Unix) OpenSSL/1.1.1u PHP/8.2.5'
+    'SERVER_NAME' => 'wago.test'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/mathias/Sites/wago/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/mathias/Sites/wago/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/mathias/Sites/wago/web/index.php'
+    'REMOTE_PORT' => '64565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'p=admin%2Factions%2Fqueue%2Frun&v=1698222831170'
+    'REQUEST_URI' => '/index.php?p=admin%2Factions%2Fqueue%2Frun&v=1698222831170'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1698222831.1802
+    'REQUEST_TIME' => 1698222831
+    'CRAFT_APP_ID' => 'CraftCMS--6f8f1c47-151e-4021-8e0a-a7d704de0b14'
+    'CRAFT_ENVIRONMENT' => 'dev'
+    'CRAFT_SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'CRAFT_DB_DRIVER' => 'mysql'
+    'CRAFT_DB_SERVER' => '127.0.0.1'
+    'CRAFT_DB_PORT' => '3306'
+    'CRAFT_DB_DATABASE' => 'wago'
+    'CRAFT_DB_USER' => 'root'
+    'CRAFT_DB_PASSWORD' => '••••'
+    'CRAFT_DB_SCHEMA' => ''
+    'CRAFT_DB_TABLE_PREFIX' => ''
+    'DEV_MODE' => 'true'
+    'ALLOW_ADMIN_CHANGES' => 'true'
+    'DISALLOW_ROBOTS' => 'true'
+    'PRIMARY_SITE_URL' => 'https://wago.test/'
+] {"userId":1} 
