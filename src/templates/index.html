@@ -1,46 +1,52 @@
 {% extends "_layouts/main" %}
 
 {% block content %}
-    {% set weakauras = craft.entries.section('weakauras').all() %}
-        {% for item in weakauras %}
-            {% set versions = item.code.all() %}
-            {% set currentVersion = versions|last %}
+    {% if currentUser %}
+    {% macro errorList(errors) %}
+    {% if errors %}
+        {{ ul(errors, {class: 'errors'}) }}
+    {% endif %}
+    {% endmacro %}
 
-            <div x-data="weakAura()" class="max-w-7xl mx-auto bg-blue-500 p-4 my-4 flex items-center justify-between">
-                <div>
-                    <h1>{{ item.title }}</h1>
-                    <p>v{{ currentVersion.version }}</p>
-                </div>
-                <input x-ref="code" type="text" class="hidden" name="code" value="{{ currentVersion.code }}">
-                <button @click="copyText" class="border-2 border-black rounded-full px-4 py-2 hover:bg-red-500">Copy WeakAura</button>
-            </div>
+    {% set weakaura = weakaura ?? create('craft\\elements\\Entry') %}
+        <div class="max-w-7xl mx-auto bg-black bg-opacity-30 p-8 border-2 border-dashed border-white border-opacity-30 mb-12">
+            <form method="post" accept-charset="UTF-8" class="w-full">
+                {{ csrfInput() }}
+                {{ actionInput('entries/save-entry') }}
+                {{ hiddenInput('sectionId', 2) }}
+                {{ hiddenInput('enabled', true) }}
+                <input type="hidden" name="fields[code][new1][type]" value="version">
 
-            <div class="max-w-7xl mx-auto grid grid-cols-12 gap-4">
-                <div class="col-span-2 bg-red-500">
-                    {% set images = item.images.all() %}
-                    {% for image in images %}
-                        <img class="w-full mb-2" src="{{ image.getUrl('weakaura') }}" alt="{{ image.title }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy">
-                    {% endfor %}
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-1">
+                        <label for="wa-version" class="block">Name</label>
+                        <input id="wa-title" class="mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" type="text" name="title" placeholder="My WeakAura">
 
-                    <p>{{ versions|length }} versions</p>
-                </div>
-                <div class="col-span-10 bg-green-500">
-                    <div class="prose md:prose-md lg:prose-lg">
-                        {{ item.description }}
+                        <label for="wa-version" class="block">Version</label>
+                        <input id="wa-version" class="mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" type="text" name="fields[code][new1][fields][version]" placeholder="1.0">
+
+                        <label for="wa-code" class="block">Imprt Code</label>
+                        <textarea id="wa-code" class="w-full mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" name="fields[code][new1][fields][code]" placeholder="Code"></textarea>
+                    </div>
+                    <div class="col-span-1 p-8">
+                        <div class="border-2 border-dashed border-white border-opacity-30 h-full flex items-center justify-center flex-col">
+                            <label for="wa-image" class="block">Image</label>
+                            <input id="wa-image" type="file" name="fields[images]">
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="col-span-2 pt-4">
+                    <button type="submit" class="border-2 border-[#ff8040] px-6 py-2 bg-[#ff8040] bg-opacity-10 rounded-full">Publish</button>
+                </div>
+            </form>
+        </div>
+    {% endif %}
+    
+    {% set weakauras = craft.entries.section('weakauras').all() %}
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {% for item in weakauras %}
+            {% include "_sections/weakauras/line" %}
         {% endfor %}
-    <script>
-        function weakAura() {
-            return { 
-                copyText() {
-                    let text = this.$refs.code.value;
-                    navigator.clipboard.writeText(text).then(function() {
-                        alert('WeakAura copied!');
-                    });
-                }   
-            };
-        };
-    </script>
+    </div>
 {% endblock %}

@@ -1,0 +1,1 @@
+function copyTextAlpine(t){return{copyText:t,copyNotification:!1,copyToClipboard(){navigator.clipboard.writeText(this.copyText),this.copyNotification=!0;let t=this;setTimeout(function(){t.copyNotification=!1},3e3)}}}

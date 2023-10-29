@@ -1,0 +1,27 @@
+{% extends "_layouts/main" %}
+
+{% macro errorList(errors) %}
+  {% if errors %}
+    {{ ul(errors, {class: 'errors'}) }}
+  {% endif %}
+{% endmacro %}
+
+{% set entry = entry ?? create('craft\\elements\\Entry') %}
+
+{% block content %}
+	<form method="post" accept-charset="UTF-8">
+	{{ csrfInput() }}
+	{{ actionInput('entries/save-entry') }}
+	{{ redirectInput('{url}') }}
+	{{ hiddenInput('sectionId', 2) }}
+	{{ hiddenInput('enabled', true) }}
+
+	<label for="title">Name your WeakAura:</label>
+	{{ input('text', 'title', entry.title, {
+		id: 'title',
+	}) }}
+	{{ _self.errorList(entry.getErrors('title')) }}
+
+	<button type="submit">Publish</button>
+	</form>
+{% endblock %}

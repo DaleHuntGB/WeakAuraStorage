@@ -1,4 +1,27 @@
-dateModified: 1698222814
+dateModified: 1698615106
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:7862d661-1b5f-49bd-a1dc-210e9c6c0717' # Weakauras
+      tableAttributes:
+        - 'field:87fe2549-eab9-4249-8136-ad0171daef0b' # Images
+        - postDate
+        - expiryDate
+        - link
+      type: native
 email:
   fromEmail: mathias@syversen.io
   fromName: Wago
@@ -56,8 +79,9 @@ system:
   edition: solo
   live: true
   name: Wago
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Oslo
 users:
   allowPublicRegistration: false
   defaultGroup: null
