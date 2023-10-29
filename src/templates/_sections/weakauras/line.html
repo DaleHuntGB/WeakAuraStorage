@@ -1,14 +1,14 @@
 {% set versions = item.code.all() %}
 {% set currentVersion = versions|last %}
 
-<article class="max-w-7xl mx-auto bg-[#2f3336] w-full flex items-center flex-wrap col-span-1">
-	<div class="max-w-[150px] w-full flex-shrink relative bg-black" style="padding-bottom: 25.56%;">
+<article class="max-w-7xl mx-auto bg-[#2f3336] w-full flex items-center flex-col lg:flex-row col-span-1">
+	<div class="max-w-[150px] w-full flex-shrink relative bg-[#1c1f20]" style="padding-bottom: 25.56%;">
 		{% for image in item.images.limit(1).all() %}
 				<img src="{{ image.url }}" class="h-full w-full object-cover absolute inset-0">
 			{% endfor %}
 	</div>
 	<div class="flex-grow px-8">
-		<a href="/profile/{{ item.author.id }}" class="flex items-center text-white text-opacity-50 transition-all hover:text-green-500">
+		<a href="/profile/{{ item.author.username}}" class="flex items-center text-white text-opacity-50 transition-all hover:text-green-500">
 			<div>{{ item.author.name }}</div>
 		</a>
 		<h1 class="text-2xl font-bold capitalize">{{ item.title }}</h1>

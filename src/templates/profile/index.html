@@ -1,0 +1,21 @@
+{% extends "_layouts/main" %}
+
+{% set user = craft.users.username(any).one() %}
+{% if not user %}{% exit 404 %}{% endif %}
+{% set weakauras = craft.entries.section('weakauras').authorId(user.id).all() %}
+
+{% block content %}
+	<div class="max-w-7xl mx-auto px-4">
+		<h1 class="text-4xl mb-12">{{ user.username }}'s WeakAuras ({{ weakauras|length }})</h1>
+		<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+			{% for item in weakauras %}
+				{% include "_sections/weakauras/line" %}
+			{% endfor %}
+
+			{% if weakauras|length == 0 %}
+				<h1>{{ user.username }} is just a little leech...</h1>
+			{% endif %}
+			
+		</div>
+	</div>
+{% endblock %}

@@ -20,13 +20,13 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div class="col-span-1">
                         <label for="wa-version" class="block">Name</label>
-                        <input id="wa-title" class="mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" type="text" name="title" placeholder="My WeakAura">
+                        <input id="wa-title" class="mb-6 bg-transparent border-b-2 border-[#ff8040] py-2" type="text" name="title" placeholder="My WeakAura">
 
                         <label for="wa-version" class="block">Version</label>
-                        <input id="wa-version" class="mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" type="text" name="fields[code][new1][fields][version]" placeholder="1.0">
+                        <input id="wa-version" class="mb-6 bg-transparent border-b-2 border-[#ff8040] py-2" type="text" name="fields[code][new1][fields][version]" placeholder="1.0">
 
                         <label for="wa-code" class="block">Imprt Code</label>
-                        <textarea id="wa-code" class="w-full mb-6 bg-transparent border-b-2 border-[#ff8040] p-2" name="fields[code][new1][fields][code]" placeholder="Code"></textarea>
+                        <textarea id="wa-code" class="w-full mb-6 bg-transparent border-b-2 border-[#ff8040] py-2" name="fields[code][new1][fields][code]" placeholder="Paste your code here..."></textarea>
                     </div>
                     <div class="col-span-1 p-8">
                         <div class="border-2 border-dashed border-white border-opacity-30 h-full flex items-center justify-center flex-col">
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="col-span-2 pt-4">
-                    <button type="submit" class="border-2 border-[#ff8040] px-6 py-2 bg-[#ff8040] bg-opacity-10 rounded-full">Publish</button>
+                    <button type="submit" class="hover:animate-pulse border-2 border-[#ff8040] px-6 py-2 bg-[#ff8040] bg-opacity-10 rounded-full">Publish</button>
                 </div>
             </form>
         </div>
@@ -45,6 +45,9 @@
     
     {% set weakauras = craft.entries.section('weakauras').all() %}
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="col-span-2">
+            <h1 class="text-4xl mb-4">Latest WeakAuras</h1>
+        </div>
         {% for item in weakauras %}
             {% include "_sections/weakauras/line" %}
         {% endfor %}
